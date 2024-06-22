@@ -11,14 +11,18 @@ The data for this project can be obtained from the following sources:
 
 Please download these datasets and place them in a folder named `data` in the root directory of this project.
 
+## Update
+New version of the project uses an unified database to remove home/away bias in international game. I retrained the model using this structure.
+
 ## Project Structure
 
 The project consists of five Jupyter Notebook files that should be run in the following order:
 
 1. **db creator.ipynb**: Creates and sets up the initial database required for the project.
 2. **feats eng.ipynb**: Performs feature engineering to prepare the data for analysis and modeling.
-3. **data analysis.ipynb**: Conducts exploratory data analysis to understand the data and derive insights.
-4. **model.ipynb**: Builds and trains the Machine Learning models to estimate team goals.
+3. **new feats.ipynb**: Builds the unique database with away and home team in same dataframe
+4. **ml model - one team.ipynb**: Builds and trains the Machine Learning models to estimate team goals.
+6. **feats calculator.ipynb**: Calculates the features using the unique database.
 5. **poisson model.ipynb**: Uses the estimates from the ML models as the Poisson Distribution expected values to predict match outcomes.
 
 ## Requirements

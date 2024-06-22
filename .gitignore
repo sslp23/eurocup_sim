@@ -1,2 +1,4 @@
 *.csv 
 *.pkl 
+odds analysis.ipynb
+.ipynb_checkpoints/odds analysis-checkpoint.ipynb
